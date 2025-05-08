@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Thermometer, Gauge, Droplet } from 'lucide-react';
 import DashboardCard from '../ui/DashboardCard';
@@ -20,7 +21,7 @@ const TankStatusCard = ({ vesselData, isLoading = false }) => {
         {/* Tank 1 */}
         <div className="bg-[#0F1824]/40 rounded-lg p-4">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-medium text-white">Tank 1 (Stb'd)</h3>
+            <h3 className="text-sm font-medium text-white">Tank 1 (Stb&apos;d)</h3>
             <div className="text-xs text-gray-400">
               {Math.round(
                 parseFloat(vesselData?.cargoQty?.tank1 || 0)

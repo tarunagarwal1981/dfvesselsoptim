@@ -1,4 +1,6 @@
+
 import React from 'react';
+import Link from 'next/link';
 import { Ship, Menu, Bell, Settings, User } from 'lucide-react';
 
 const Header = () => {
@@ -16,42 +18,42 @@ const Header = () => {
               <p className="text-gray-400 text-xs">Pacific Garnet | DFDE</p>
             </div>
           </div>
-
-          {/* Navigation links */}
+          
+          {/* Navigation links for medium screens and up */}
           <nav className="hidden md:flex space-x-6">
-            <a
+            <Link
               href="/"
               className="text-[#3BADE5] px-3 py-1 rounded-md text-sm font-medium border-b-2 border-[#3BADE5]"
             >
               Dashboard
-            </a>
-            <a
+            </Link>
+            <Link
               href="/voyage"
               className="text-gray-300 hover:text-white px-3 py-1 rounded-md text-sm font-medium"
             >
               Voyage
-            </a>
-            <a
+            </Link>
+            <Link
               href="/cargo"
               className="text-gray-300 hover:text-white px-3 py-1 rounded-md text-sm font-medium"
             >
               Cargo
-            </a>
-            <a
+            </Link>
+            <Link
               href="/consumption"
               className="text-gray-300 hover:text-white px-3 py-1 rounded-md text-sm font-medium"
             >
               Consumption
-            </a>
-            <a
+            </Link>
+            <Link
               href="/reports"
               className="text-gray-300 hover:text-white px-3 py-1 rounded-md text-sm font-medium"
             >
               Reports
-            </a>
+            </Link>
           </nav>
-
-          {/* Controls */}
+          
+          {/* Right side controls */}
           <div className="flex items-center space-x-4">
             <button className="text-gray-400 hover:text-white p-1 rounded-full hover:bg-gray-800">
               <Bell className="h-5 w-5" />
